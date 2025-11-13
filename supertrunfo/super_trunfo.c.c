@@ -57,6 +57,9 @@ int main() {
 
     // Calcula a densidade populacional. 
     densidadePopulacional1 = populacao1 / area1;
+
+    // Calcula o PIB per capita. 
+    pibPerCapita1 = pib1 / populacao1;
     
     // --- Coleta de Dados para a Carta 2 ---
     printf("Carta 2:\n");
@@ -89,7 +92,11 @@ int main() {
     printf("Qual o número de pontos turísticos? \n");
     scanf("%d", &pontosTuristicos2);
 
+    // Calcula a densidade populacional.
     densidadePopulacional2 = populacao2 / area2;
+
+    // Calcula o PIB per capita. 
+    pibPerCapita2 = pib2 / populacao2;
 
     // Imprime um resumo formatado com todas as informações da Carta 1.
     printf(" Carta 1:\n Estado: %s\n Código da Carta: %s\n Nome da Cidade: %s\n Área: %.2f km2\n População: %2d\n PIB: %2f milhões de reais\n Número de pontos turísticos: %d\n Densidade populacional: %f hab/km²\n", estado1, codigo1, cidade1, area1, populacao1, pib1, pontosTuristicos1);
@@ -100,10 +107,6 @@ int main() {
      //Retorna 0 para indicar que o programa foi executado com sucesso.
     return 0;
 }
-
-
-// calcular PIB per capita (float) 
-// PIB / população 
 
 
 
