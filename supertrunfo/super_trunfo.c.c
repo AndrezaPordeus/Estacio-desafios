@@ -6,7 +6,7 @@ int main() {
     char estado1[2];                // Armazena a letra que representa o estado 
     char codigo1[4];                // Armazena o código da carta 
     char cidade1[50];               // Armazena o nome da cidade
-    int populacao1;                 // Armazena o número de habitantes
+    unsigned long int populacao1;   // Armazena o número de habitantes
     float area1;                    // Armazena a área em km²
     float pib1;                     // Armazena o Produto Interno Bruto
     int pontosTuristicos1;          // Armazena a quantidade de pontos turísticos
@@ -17,7 +17,7 @@ int main() {
     char estado2[3];                // Armazena a letra que representa o estado
     char codigo2[4];                // Armazena o código da carta
     char cidade2[50];               // Armazena o nome da cidade
-    int populacao2;                 // Armazena o número de habitantes
+    unsigned long int populacao2;   // Armazena o número de habitantes
     float area2;                    // Armazena a área em km²
     float pib2;                     // Armazena o Produto Interno Bruto
     int pontosTuristicos2;          // Armazena a quantidade de pontos turísticos
@@ -45,7 +45,7 @@ int main() {
 
     // Pede e lê a população.
     printf("Qual a população? \n");
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
 
     // Pede e lê o PIB.
     printf("Qual o PIB? \n");
@@ -82,7 +82,7 @@ int main() {
 
     // Pede e lê a população.
     printf("Qual a população? \n");
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
 
     // Pede e lê o PIB.
     printf("Qual o PIB? \n");
@@ -99,15 +99,11 @@ int main() {
     pibPerCapita2 = pib2 / populacao2;
 
     // Imprime um resumo formatado com todas as informações da Carta 1.
-    printf(" Carta 1:\n Estado: %s\n Código da Carta: %s\n Nome da Cidade: %s\n Área: %.2f km2\n População: %2d\n PIB: %2f milhões de reais\n Número de pontos turísticos: %d\n Densidade populacional: %f hab/km²\n", estado1, codigo1, cidade1, area1, populacao1, pib1, pontosTuristicos1);
+    printf(" Carta 1:\n Estado: %s\n Código da Carta: %s\n Nome da Cidade: %s\n Área: %.2f km2\n População: %lu\n PIB: %2f milhões de reais\n Número de pontos turísticos: %d\n Densidade populacional: %f hab/km²\n", estado1, codigo1, cidade1, area1, populacao1, pib1, pontosTuristicos1);
 
     // Imprime um resumo formatado com todas as informações da Carta 2.
-    printf("Carta 2:\n Estado: %s\n Código da Carta: %s\n Nome da Cidade: %s\n Área: %.2f km2\n População: %d\n PIB: %.2f milhões de reais\n Número de pontos turísticos: %d\n Densidade populacional: %fhab/km²\n",  estado2, codigo2, cidade2, area2, populacao2, pib2, pontosTuristicos2);
+    printf("Carta 2:\n Estado: %s\n Código da Carta: %s\n Nome da Cidade: %s\n Área: %.2f km2\n População: %lu\n PIB: %.2f milhões de reais\n Número de pontos turísticos: %d\n Densidade populacional: %fhab/km²\n",  estado2, codigo2, cidade2, area2, populacao2, pib2, pontosTuristicos2);
 
      //Retorna 0 para indicar que o programa foi executado com sucesso.
     return 0;
 }
-
-
-
-
